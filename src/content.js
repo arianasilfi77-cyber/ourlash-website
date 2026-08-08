@@ -115,10 +115,10 @@ export const content = {
   button: 'Cek Lokasi Saya',
 },
     programs: [
-      ['Founding Client', 'Untuk merayakan awal perjalanan OurLash, 20 klien pertama akan mendapatkan diskon Rp20.000 untuk appointment mereka.\n\nSetelah seluruh 20 slot founding client terpenuhi, program ini akan resmi berakhir.', 'Terbatas untuk 20 Klien Pertama'],
-      ['Welcome Offer', 'Setiap bulan, 10 booking pertama dari klien baru akan mendapatkan diskon Rp10.000 untuk treatment pilihan.\n\nSambutan kecil dari kami untuk memulai perjalanan Anda bersama OurLash.', '10 Booking Pertama Setiap Bulan'],
-      ['Loyalty Card', 'Setiap appointment membawa Anda selangkah lebih dekat dengan reward eksklusif.\n\nKumpulkan stamp setiap kunjungan dan nikmati benefit spesial sebagai ucapan terima kasih atas kepercayaan Anda.', 'Benefit Eksklusif Member'],
-      ['Ramadan Appreciation', 'Selama bulan Ramadan, kami menyiapkan program apresiasi khusus untuk klien tersayang sebagai ucapan terima kasih telah menjadi bagian dari perjalanan OurLash.\n\nDetail program dapat berbeda setiap tahun dan akan diumumkan menjelang Ramadan.', ''],
+      ['Founding Client', 'Untuk merayakan awal perjalanan OurLash, 20 klien pertama akan mendapatkan diskon Rp20.000 untuk appointment mereka.\n\nSetelah seluruh 20 slot founding client terpenuhi, program ini akan resmi berakhir.', '20 Klien Pertama'],
+      ['Welcome Offer', 'Setiap bulan, 10 booking pertama dari klien baru akan mendapatkan diskon Rp10.000 untuk treatment pilihan.\n\nSambutan kecil dari kami untuk memulai perjalanan Anda bersama OurLash.', '10 Booking Pertama / Bulan'],
+      ['Loyalty Card', 'Setiap appointment membawa Anda selangkah lebih dekat dengan reward eksklusif.\n\nKumpulkan stamp setiap kunjungan dan nikmati benefit spesial sebagai ucapan terima kasih atas kepercayaan Anda.', 'Member Benefit'],
+      ['Ramadan Appreciation', 'Selama bulan Ramadan, kami menyiapkan program apresiasi khusus untuk klien tersayang sebagai ucapan terima kasih telah menjadi bagian dari perjalanan OurLash.\n\nDetail program dapat berbeda setiap tahun dan akan diumumkan menjelang Ramadan.', 'Special Appreciation',],
     ],
 
     programsIntro: 'Di OurLash, kami percaya bahwa hubungan yang bermakna dibangun melalui pengalaman yang selalu memuaskan, bukan sekadar melalui potongan harga.\n\nProgram-program spesial kami dirancang sebagai bentuk apresiasi tulus untuk setiap klien yang telah mempercayakan perawatan bulu matanya kepada OurLash.',
@@ -327,7 +327,7 @@ serviceArea: {
     [
       'Ramadan Appreciation',
       'During Ramadan, we prepare a special appreciation program for our valued clients as a thank you for being part of the OurLash journey.\n\nProgram details may vary each year and will be announced closer to Ramadan.',
-      '',
+      'Special Appreciation',
     ],
   ],
 
