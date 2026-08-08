@@ -1,4 +1,6 @@
-export const whatsappUrl = 'https://wa.me/6285701461250?text=' + encodeURIComponent(`Hi OurLash 👋
+export const whatsappUrl =
+  'https://wa.me/6285701461250?text=' +
+  encodeURIComponent(`Hi OurLash 👋
 
 I'd like to book an appointment.
 
@@ -10,6 +12,16 @@ Location:
 
 Thank you.`);
 
+export const checkLocationUrl =
+  'https://wa.me/6285701461250?text=' +
+  encodeURIComponent(`Hi OurLash 👋
+
+I'd like to check whether my location is within the OurLash home service area.
+
+My location:
+
+Thank you.`);
+
 export const languages = {
   id: 'Indonesia',
   en: 'English',
@@ -18,14 +30,15 @@ export const languages = {
 export const content = {
   id: {
     navItems: [
-      ['Beranda', '#home'],
-      ['Tentang', '#about'],
-      ['Layanan', '#services'],
-      ['Galeri', '#gallery'],
-      ['FAQ', '#faq'],
-      ['Kontak', '#contact'],
-      ['Aftercare', '/aftercare'],
-    ],
+  ['Beranda', '#home'],
+  ['Tentang', '#about'],
+  ['Layanan', '#services'],
+  ['Galeri', '#gallery'],
+  ['Programs', '#programs'],
+  ['FAQ', '#faq'],
+  ['Kontak', '#contact'],
+  ['Aftercare', '/aftercare'],
+],
     book: 'Book Now',
     hero: {
       label: 'Premium Lash Studio',
@@ -80,20 +93,47 @@ export const content = {
         cta: 'Book Lash Lift + Tint',
       },
     ],
+    comingSoon: {
+  label: 'Segera Hadir',
+  title: 'Lash Extension',
+  body: 'Kami sedang mempersiapkan layanan Lash Extension dengan komitmen yang sama terhadap kualitas, kenyamanan, dan perhatian pada setiap detail yang menjadi ciri khas setiap treatment di OurLash.',
+  cta: 'Nantikan kehadirannya.',
+},
+    serviceArea: {
+  label: 'Area Layanan',
+  title: 'Perawatan Lash Profesional, Di Mana Pun Anda Merasa Nyaman.',
+  intro: 'Nikmati kenyamanan perawatan bulu mata profesional langsung dari lokasi pilihan Anda.\n\nLayanan home service kami tersedia di area tertentu di Yogyakarta dengan biaya perjalanan yang transparan, sehingga Anda dapat mengetahui total biaya sebelum mengonfirmasi appointment.',
+  areasTitle: 'Area Layanan Kami',
+  areas: ['Sleman', 'Kota Yogyakarta', 'Bantul'],
+  travelFeeTitle: 'Biaya Perjalanan',
+  travelFees: [
+    ['0–5 km', 'Gratis'],
+    ['6–10 km', 'Rp15.000'],
+    ['11–15 km', 'Rp25.000'],
+  ],
+  note: 'Biaya perjalanan dihitung berdasarkan jarak antara lokasi OurLash dan alamat appointment Anda.\n\nJika lokasi Anda berada di luar area layanan kami, silakan hubungi kami terlebih dahulu agar kami dapat mengecek ketersediaan layanan.',
+  button: 'Cek Lokasi Saya',
+},
     programs: [
       ['Founding Client', 'Untuk merayakan awal perjalanan OurLash, 20 klien pertama akan mendapatkan diskon Rp20.000 untuk appointment mereka.\n\nSetelah seluruh 20 slot founding client terpenuhi, program ini akan resmi berakhir.', 'Terbatas untuk 20 Klien Pertama'],
       ['Welcome Offer', 'Setiap bulan, 10 booking pertama dari klien baru akan mendapatkan diskon Rp10.000 untuk treatment pilihan.\n\nSambutan kecil dari kami untuk memulai perjalanan Anda bersama OurLash.', '10 Booking Pertama Setiap Bulan'],
       ['Loyalty Card', 'Setiap appointment membawa Anda selangkah lebih dekat dengan reward eksklusif.\n\nKumpulkan stamp setiap kunjungan dan nikmati benefit spesial sebagai ucapan terima kasih atas kepercayaan Anda.', 'Benefit Eksklusif Member'],
       ['Ramadan Appreciation', 'Selama bulan Ramadan, kami menyiapkan program apresiasi khusus untuk klien tersayang sebagai ucapan terima kasih telah menjadi bagian dari perjalanan OurLash.\n\nDetail program dapat berbeda setiap tahun dan akan diumumkan menjelang Ramadan.', ''],
     ],
-    gallery: {
-      label: 'Gallery',
-      title: 'Natural, Clean Before & After Results.',
-      intro: 'Placeholder ini disiapkan agar mudah diganti dengan foto klien asli ketika sudah tersedia.',
-      cards: ['Lash Lift Natural', 'Lift + Tint Soft Definition', 'Everyday Clean Look'],
-      before: 'Before',
-      after: 'After',
-    },
+
+    programsIntro: 'Di OurLash, kami percaya bahwa hubungan yang bermakna dibangun melalui pengalaman yang selalu memuaskan, bukan sekadar melalui potongan harga.\n\nProgram-program spesial kami dirancang sebagai bentuk apresiasi tulus untuk setiap klien yang telah mempercayakan perawatan bulu matanya kepada OurLash.',
+
+    programsOutro: 'Perjalanan Anda bersama OurLash tidak berhenti setelah satu kali appointment.\n\nKami berharap setiap kunjungan menjadi awal dari hubungan jangka panjang yang dibangun atas dasar kepercayaan, kualitas yang konsisten, dan hasil yang cantik secara natural.',
+
+gallery: {
+  label: 'Real Results',
+  title: 'Beautiful Lashes. Real Clients.',
+  intro: 'Setiap transformasi yang ditampilkan di sini adalah hasil nyata dari klien OurLash, tanpa false lashes atau mascara. Hanya bulu mata yang terangkat secara natural dan terlihat lebih sehat.',
+  before: 'Before',
+  after: 'After',
+  transformationTitle: 'Lash Lift Transformation',
+  transformationDescription: 'Natural lift. No extensions. No mascara.',
+},
     faq: {
       label: 'FAQ',
       title: 'Frequently Asked Questions.',
@@ -122,135 +162,250 @@ export const content = {
 
 content.en = {
   ...content.id,
-    "navItems": [
+
+ navItems: [
+  ['Home', '#home'],
+  ['About', '#about'],
+  ['Services', '#services'],
+  ['Gallery', '#gallery'],
+  ['Programs', '#programs'],
+  ['FAQ', '#faq'],
+  ['Contact', '#contact'],
+  ['Aftercare', '/aftercare'],
+],
+
+  book: 'Book Now',
+
+  hero: {
+    label: 'Premium Lash Studio',
+    title: 'Wake Up to Naturally Beautiful Lashes.',
+    subtitle: 'Natural. Elegant. Effortlessly You.',
+    body: 'Professional lash treatments designed to enhance your natural beauty with precision and care. Every appointment is thoughtfully tailored to create elegant, long-lasting results that feel comfortable and look effortlessly beautiful.',
+    secondary: 'View Services',
+    imageLabel: 'Real Results. Beautifully Natural.',
+  },
+
+  about: {
+    label: 'About OurLash',
+    title: 'Enhancing Your Natural Beauty, Never Overpowering It.',
+    body: [
+      'At OurLash, we believe the best beauty treatments do not change who you are—they simply enhance what is already beautiful.',
+      'Every appointment begins with a personal consultation to understand your natural lashes, eye shape, and the look you want to achieve. By tailoring each treatment to your individual features, we create results that feel natural, comfortable, and uniquely yours.',
+      'From consultation to aftercare, every step is carried out with professionalism, high hygiene standards, and genuine attention to detail.',
+      'Our goal is simple: to help you leave with lashes you will love and confidence you will carry with you every day.',
+    ],
+  },
+
+  promiseIntro:
+    'Exceptional results are never accidental.\n\nThey are built through thoughtful preparation, attention to detail, and a commitment to delivering a consistently enjoyable experience for every client.',
+
+  promiseItems: [
     [
-      "Home",
-      "#home"
+      'Personal Consultation',
+      'We take the time to understand your natural lashes, preferences, and the look you want before every treatment.',
     ],
     [
-      "About",
-      "#about"
+      'Professional Products',
+      'We carefully select professional products to ensure every treatment is safe, comfortable, and beautifully performed.',
     ],
     [
-      "Services",
-      "#services"
+      'Hygiene Standards',
+      'Every tool and workspace is thoroughly prepared before each appointment because your comfort and safety always come first.',
     ],
     [
-      "Gallery",
-      "#gallery"
+      'Comfortable Experience',
+      'We want every appointment to feel calm, relaxing, and unrushed, giving you time to simply enjoy the experience.',
     ],
     [
-      "FAQ",
-      "#faq"
+      'Naturally Beautiful Results',
+      'Our goal is not to create an overly dramatic look, but to enhance your natural beauty.',
     ],
     [
-      "Contact",
-      "#contact"
+      'Aftercare Support',
+      'You will receive clear aftercare guidance to help maintain your results beautifully after your appointment.',
     ],
-    [
-      "Aftercare",
-      "/aftercare"
-    ]
   ],
-  "book": "Book Appointment",
-  "hero": {
-    "label": "Premium Lash Studio",
-    "title": "Wake Up to Naturally Beautiful Lashes.",
-    "subtitle": "Natural. Elegant. Effortlessly You.",
-    "body": "Professional lash treatments designed to enhance your natural beauty with precision and care. Every appointment is thoughtfully tailored to create elegant, long-lasting results that feel comfortable and look effortlessly beautiful.",
-    "secondary": "View Services",
-    "imageLabel": "Real Results. Beautifully Natural."
-  },
-  "about": {
-    "label": "About OurLash",
-    "title": "Enhancing Your Natural Beauty, Never Overpowering It.",
-    "body": [
-      "At OurLash, we believe the best beauty treatments don’t change who you are—they simply enhance what is already beautiful.",
-      "Every appointment begins with a personal consultation to understand your natural lashes, eye shape, and the look you want to achieve. By tailoring each treatment to your individual features, we create results that feel natural, comfortable, and uniquely yours.",
-      "From consultation to aftercare, every step is carried out with professionalism, high hygiene standards, and genuine attention to detail.",
-      "Our goal is simple: to help you leave with lashes you’ll love and confidence you’ll carry with you every day."
-    ]
-  },
-  "promiseIntro": "Exceptional results are never accidental.\n\nThey’re built through thoughtful preparation, attention to detail, and a commitment to delivering a consistently enjoyable experience for every client.",
-  "gallery": {
-    "label": "Gallery",
-    "title": "Natural, Clean Before & After Results.",
-    "intro": "These placeholders are prepared to be easily replaced with real client photos later.",
-    "cards": [
-      "Natural Lash Lift",
-      "Lift + Tint Soft Definition",
-      "Everyday Clean Look"
+
+  reasons: [
+    [
+      'Naturally Beautiful Results',
+      'Enhancing your natural lashes without making them look heavy or overly dramatic.',
     ],
-    "before": "Before",
-    "after": "After"
+    [
+      'Personal Consultation',
+      'Every client is unique, so each treatment is tailored to their natural lashes and personal preferences.',
+    ],
+    [
+      'Relaxing Experience',
+      'Enjoy a calm atmosphere, unrushed appointments, and thoughtful attention to every detail.',
+    ],
+    [
+      'Transparent Pricing',
+      'Clear pricing with no hidden fees, so you always know what to prepare for.',
+    ],
+    [
+      'Precision in Every Detail',
+      'We believe beautiful results come from patience, precision, and consistency throughout every step of the treatment.',
+    ],
+    [
+      'Ongoing Care',
+      'Our service does not end when your appointment does.\n\nWe are here to support you with aftercare guidance and answer any questions afterward.',
+    ],
+  ],
+
+  services: [
+    {
+      name: 'Lash Lift',
+      description: [
+        'Lash Lift lifts and curls your natural lashes from the root, creating a more open-looking eye without eyelash extensions or an eyelash curler.',
+        'The result is beautifully lifted lashes that remain lightweight, natural-looking, and effortless to maintain.',
+      ],
+      included: [
+        'Personal consultation',
+        'Lash assessment',
+        'Eye area cleansing',
+        'Professional Lash Lift treatment',
+        'Nourishing treatment',
+        'Aftercare guidance',
+      ],
+      duration: 'Approximately 60 minutes',
+      price: 'Rp85,000',
+      cta: 'Book Lash Lift',
+    },
+    {
+      name: 'Lash Lift + Tint',
+      description: [
+        'Enjoy all the benefits of a Lash Lift, enhanced with a professional tint to make your natural lashes appear darker and more defined.',
+        'Ideal for anyone who wants their lashes to look naturally fuller without relying on mascara every day.',
+      ],
+      included: [
+        'Everything included in Lash Lift',
+        'Professional Lash Tint',
+      ],
+      duration: 'Approximately 70 minutes',
+      price: 'Rp100,000',
+      cta: 'Book Lash Lift + Tint',
+    },
+  ],
+comingSoon: {
+  label: 'Coming Soon',
+  title: 'Lash Extension',
+  body: 'We are currently preparing our Lash Extension service with the same commitment to quality, comfort, and attention to detail that defines every OurLash treatment.',
+  cta: 'Stay tuned.',
+},
+serviceArea: {
+  label: 'Service Area',
+  title: 'Professional Lash Care, Wherever You Feel Most Comfortable.',
+  intro: 'Enjoy professional lash treatments from the comfort of your preferred location.\n\nOur home service is available in selected areas across Yogyakarta with transparent travel fees, so you know the total cost before confirming your appointment.',
+  areasTitle: 'Areas We Serve',
+  areas: ['Sleman', 'Yogyakarta City', 'Bantul'],
+  travelFeeTitle: 'Travel Fee',
+  travelFees: [
+    ['0–5 km', 'Free'],
+    ['6–10 km', 'Rp15,000'],
+    ['11–15 km', 'Rp25,000'],
+  ],
+  note: 'Travel fees are calculated based on the distance between the OurLash location and your appointment address.\n\nIf your location is outside our service area, please contact us first so we can check service availability.',
+  button: 'Check My Location',
+},
+  programs: [
+    [
+      'Founding Client',
+      'To celebrate the beginning of OurLash, the first 20 clients will receive Rp20,000 off their appointment.\n\nOnce all 20 founding client slots are filled, the program will officially end.',
+      'Limited to the First 20 Clients',
+    ],
+    [
+      'Welcome Offer',
+      'Every month, the first 10 bookings from new clients will receive Rp10,000 off their selected treatment.\n\nA small welcome from us as you begin your journey with OurLash.',
+      'First 10 Bookings Every Month',
+    ],
+    [
+      'Loyalty Card',
+      'Every appointment brings you one step closer to an exclusive reward.\n\nCollect a stamp with every visit and enjoy special benefits as our way of saying thank you for your continued trust.',
+      'Exclusive Member Benefit',
+    ],
+    [
+      'Ramadan Appreciation',
+      'During Ramadan, we prepare a special appreciation program for our valued clients as a thank you for being part of the OurLash journey.\n\nProgram details may vary each year and will be announced closer to Ramadan.',
+      '',
+    ],
+  ],
+
+  programsIntro: 'At OurLash, we believe meaningful relationships are built through consistently satisfying experiences, not simply through discounts.\n\nOur special programs are designed as a genuine way to appreciate every client who has trusted OurLash with their lash care.',
+
+  programsOutro: 'Your journey with OurLash does not end after a single appointment.\n\nWe hope every visit becomes the beginning of a long-term relationship built on trust, consistent quality, and naturally beautiful results.',
+
+ gallery: {
+  label: 'Real Results',
+  title: 'Beautiful Lashes. Real Clients.',
+  intro: 'Every transformation shown here is a real OurLash client with no false lashes or mascara. Just naturally lifted, healthier-looking lashes.',
+  before: 'Before',
+  after: 'After',
+  transformationTitle: 'Lash Lift Transformation',
+  transformationDescription: 'Natural lift. No extensions. No mascara.',
+},
+
+  faq: {
+    label: 'FAQ',
+    title: 'Frequently Asked Questions.',
+    items: [
+      [
+        'How long does a Lash Lift last?',
+        'Usually 4–6 weeks, depending on your natural lash cycle and aftercare habits.',
+      ],
+      [
+        'Is Lash Lift safe for natural lashes?',
+        'Yes, the treatment uses professional products, proper processing time, and a lash assessment first.',
+      ],
+      [
+        'Can I wear mascara after treatment?',
+        'Yes, after the first 24 hours. For longer-lasting results, choose a lightweight mascara that is easy to remove.',
+      ],
+      [
+        'Is home service available?',
+        'Yes, home service is available in selected areas across Yogyakarta with transparent travel fees based on distance.',
+      ],
+    ],
   },
-  "faq": {
-    "label": "FAQ",
-    "title": "Frequently Asked Questions.",
-    "items": [
-      [
-        "How long does a Lash Lift last?",
-        "Usually 4–6 weeks, depending on your natural lash cycle and aftercare habits."
-      ],
-      [
-        "Is Lash Lift safe for natural lashes?",
-        "Yes, the treatment uses professional products, proper processing time, and a lash assessment first."
-      ],
-      [
-        "Can I wear mascara after treatment?",
-        "Yes, after the first 24 hours. For longer-lasting results, choose a lightweight mascara that is easy to remove."
-      ],
-      [
-        "Is home service available?",
-        "Yes, home service is available in selected areas across Yogyakarta with transparent travel fees based on distance."
-      ]
-    ]
+
+  contact: {
+    label: 'Contact',
+    title: 'Ready for Naturally Beautiful Lashes?',
+    intro:
+      'Contact us to book, consult about services, or check home service availability.',
+    details: [
+      ['WhatsApp', '+62 857-0146-1250'],
+      ['Instagram', '@ourlash.studio'],
+      ['Operating Hours', 'Monday–Saturday, 09.00–18.00 WIB'],
+      ['Service Area', 'Sleman, Yogyakarta City, Bantul'],
+    ],
   },
-  "contact": {
-    "label": "Contact",
-    "title": "Ready for Naturally Beautiful Lashes?",
-    "intro": "Contact us to book, consult about services, or check home service availability.",
-    "details": [
+
+  footer:
+    'Premium lash care that feels natural, comfortable, and thoughtful in Yogyakarta.',
+
+  aftercare: {
+    label: 'Aftercare Guide',
+    title: 'Keep Your Lash Lift Beautiful for Longer.',
+    intro:
+      'Follow these simple steps after your appointment to keep results neat, comfortable, and long-lasting.',
+    tips: [
       [
-        "WhatsApp",
-        "+62 857-0146-1250"
+        'First 24 Hours',
+        'Avoid water, steam, mascara, and rubbing the eye area.',
       ],
       [
-        "Instagram",
-        "@ourlash.studio"
+        'Daily Routine',
+        'Brush lashes with a clean spoolie and cleanse the eye area gently.',
       ],
       [
-        "Operating Hours",
-        "Monday–Saturday, 09.00–17.00 WIB"
+        'Recommended Products',
+        'Use a gentle oil-free cleanser around the eyes to help maintain your lift.',
       ],
       [
-        "Service Area",
-        "Sleman, Yogyakarta City, Bantul"
-      ]
-    ]
+        'When to Rebook',
+        'Schedule your next appointment after 4–6 weeks depending on your natural lash condition.',
+      ],
+    ],
   },
-  "footer": "Premium lash care that feels natural, comfortable, and thoughtful in Yogyakarta.",
-  "aftercare": {
-    "label": "Aftercare Guide",
-    "title": "Keep Your Lash Lift Beautiful for Longer.",
-    "intro": "Follow these simple steps after your appointment to keep results neat, comfortable, and long-lasting.",
-    "tips": [
-      [
-        "First 24 Hours",
-        "Avoid water, steam, mascara, and rubbing the eye area."
-      ],
-      [
-        "Daily Routine",
-        "Brush lashes with a clean spoolie and cleanse the eye area gently."
-      ],
-      [
-        "Recommended Products",
-        "Use a gentle oil-free cleanser around the eyes to help maintain your lift."
-      ],
-      [
-        "When to Rebook",
-        "Schedule your next appointment after 4–6 weeks depending on your natural lash condition."
-      ]
-    ]
-  }
 };
